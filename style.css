@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  color: #111;
+}
+
+/* layout */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAV */
+.nav {
+  background: white;
+  padding: 15px 0;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+  background: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #7e22ce;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* WORK */
+.work {
+  padding: 80px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* AREAS */
+.areas {
+  padding: 80px 20px;
+}
+
+.areas .container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  padding: 6px 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.purple { background: #7e22ce; }
+.yellow { background: #facc15; color: black; }
+.orange { background: #f97316; }
+
+/* RESULTS */
+.results {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.small .stat {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  background: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+/* HERO SECTION UPGRADE */
+.hero {
+  background: linear-gradient(135deg, #1e1b4b, #3b82f6);
+  color: white;
+}
+
+.hero p {
+  color: #dbeafe;
+}
+
+/* BUTTON UPGRADE */
+.btn {
+  background: white;
+  color: #1e1b4b;
+}
+/* old code */
+.hero {
+  background: white;
+}
+
+/* new code (must be below) */
+.hero {
+  background: linear-gradient(135deg, #1e1b4b, #3b82f6);
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+/* লোগো কন্টেইনার */
+.nayem-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+/* গ্রাফ আইকন স্টাইল */
+.logo-icon {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    border-bottom: 2px solid #2c3e50;
+    border-left: 2px solid #2c3e50;
+    padding: 2px;
+}
+
+.bar {
+    width: 6px;
+    background: #2ecc71; /* সবুজ বার */
+    border-radius: 1px 1px 0 0;
+}
+
+.bar-1 { height: 12px; }
+.bar-2 { height: 20px; }
+.bar-3 { height: 28px; }
+
+/* গ্রোথ অ্যারো (কমলা রঙ) */
+.arrow {
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #e67e22;
+    bottom: 5px;
+    left: 0;
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    right: -2px;
+    top: -3px;
+    border-left: 5px solid #e67e22;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+/* লোগো টেক্সট স্টাইল */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+}
+
+.tagline {
+    font-size: 9px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    margin-top: 4px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* নেভিগেশন র‍্যাপার ঠিক করার জন্য */
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* লোগো কন্টেইনার - মোবাইল ও পিসি দুটোর জন্যই */
+.nayem-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* আইকন এবং লেখার দূরত্ব */
+    min-width: max-content; /* এটি নিশ্চিত করবে লোগো যেন ভেঙে না যায় */
+}
+
+/* আইকনটি মোবাইলে ছোট দেখাবে কিন্তু গায়েব হবে না */
+.logo-icon {
+    position: relative;
+    width: 32px; /* মোবাইলের জন্য একটু ছোট সাইজ */
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    border-bottom: 2px solid #2c3e50;
+    border-left: 2px solid #2c3e50;
+    flex-shrink: 0; /* আইকনটিকে দুমড়ে মুচড়ে যাওয়া থেকে বাঁচাবে */
+}
+
+/* বার গুলোর সাইজ মোবাইলের জন্য অ্যাডজাস্টমেন্ট */
+.bar-1 { height: 10px; }
+.bar-2 { height: 18px; }
+.bar-3 { height: 25px; }
+
+/* মোবাইল রেসপনসিভ মিডিয়া কোয়েরি */
+@media (max-width: 600px) {
+    .nav-wrap {
+        flex-direction: row; /* লোগো এবং মেনু পাশাপাশি রাখবে */
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .name {
+        font-size: 18px; /* মোবাইলে নাম একটু ছোট হবে */
+    }
+
+    .tagline {
+        font-size: 7px; /* ট্যাগলাইনও ছোট হবে */
+    }
+    
+    .links {
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+    }
+}
